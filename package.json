@@ -1,0 +1,32 @@
+{
+  "name": "learnreact",
+  "version": "1.0.0",
+  "description": "Learn React.js",
+  "main": "index.js",
+  "scripts": {
+    "develop": "NODE_ENV=development webpack --watch --colors --config ./webpack.config.js",
+    "build": "NODE_ENV=production webpack --colors --config ./webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y-endo/LearnReact.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/y-endo/LearnReact/issues"
+  },
+  "homepage": "https://github.com/y-endo/LearnReact#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
