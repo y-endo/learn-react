@@ -1,7 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import Layout from "./components/Layout";
+import Layout from './components/Layout';
+import StateTest from './components/StateTest';
 
 class App extends React.Component {
   constructor() {
@@ -10,7 +11,7 @@ class App extends React.Component {
   }
 
   render() {
-    const name = "yuki";
+    const name = 'yuki';
     return (
       <div>
         <p>Hello React!</p>
@@ -19,14 +20,15 @@ class App extends React.Component {
         <p>{this.getFullName()}</p>
         <p>{this.age}</p>
         <Layout />
+        <StateTest />
       </div>
     );
   }
 
   getFullName() {
-    return "endo, yuki";
+    return 'endo, yuki';
   }
 }
 
-const app = document.querySelector("#app");
+const app = document.querySelector('#app');
 ReactDOM.render(<App />, app);
