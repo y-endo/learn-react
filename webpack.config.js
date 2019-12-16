@@ -6,7 +6,9 @@ const mode = process.env.NODE_ENV !== 'production' ? 'development' : 'production
 module.exports = {
   mode: mode,
   entry: {
-    'public/01/assets/js/app': './src/01/js/index.jsx'
+    'public/01/assets/js/app': './src/01/js/index.jsx',
+    'public/02/assets/js/app': './src/02/js/index.jsx',
+    'public/03/assets/js/app': './src/03/js/index.js'
   },
   output: {
     filename: '[name].js',
