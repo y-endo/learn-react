@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/y-endo/LearnReact.git"
+    "url": "git+https://github.com/y-endo/learn-react.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/y-endo/LearnReact/issues"
+    "url": "https://github.com/y-endo/learn-react/issues"
   },
-  "homepage": "https://github.com/y-endo/LearnReact#readme",
+  "homepage": "https://github.com/y-endo/learn-react#readme",
   "devDependencies": {
     "@babel/core": "^7.7.5",
     "@babel/preset-env": "^7.7.6",
