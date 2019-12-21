@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "stylelint": "stylelint --fix ./src/**/*.scss",
-    "serve": "webpack-dev-server --config ./webpack.config.js",
-    "develop": "NODE_ENV=development webpack --watch --colors --config ./webpack.config.js & npm run serve & onchange './src/**/*.scss' -- npm run stylelint & gulp",
+    "serve": "NODE_ENV=development webpack-dev-server --config ./webpack.config.js",
+    "develop": "npm run serve & onchange './src/**/*.scss' -- npm run stylelint & gulp",
     "build": "NODE_ENV=production webpack --colors --config ./webpack.config.js"
   },
   "repository": {

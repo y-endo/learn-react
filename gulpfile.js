@@ -7,7 +7,7 @@ const paths = {
   }
 };
 
-gulp.task('scss', e => {
+gulp.task('scss', () => {
   return gulp
     .src(paths.scss.src, { base: 'src' })
     .pipe(

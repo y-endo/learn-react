@@ -34,7 +34,8 @@ module.exports = {
     open: false,
     contentBase: path.resolve(__dirname, './public'),
     watchContentBase: true,
-    historyApiFallback: true
+    historyApiFallback: true,
+    writeToDisk: true
   },
   optimization:
     mode === 'production'
