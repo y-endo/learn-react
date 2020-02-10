@@ -11,7 +11,8 @@ module.exports = {
     './public/02/assets/js/app': './src/02/js/index.jsx',
     './public/03/assets/js/app': './src/03/js/index.js',
     './public/04/assets/js/app': './src/04/js/index.js',
-    './public/05/assets/js/app': './src/05/js/index.js'
+    './public/05/assets/js/app': './src/05/js/index.js',
+    './public/06/assets/js/app': './src/06/js/index.js'
   },
   output: {
     filename: '[name].js',
