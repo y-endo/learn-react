@@ -7,12 +7,12 @@ module.exports = {
   mode: mode,
   devtool: mode === 'production' ? false : 'inline-source-map',
   entry: {
-    './public/01/assets/js/app': './src/01/js/index.jsx',
-    './public/02/assets/js/app': './src/02/js/index.jsx',
-    './public/03/assets/js/app': './src/03/js/index.js',
-    './public/04/assets/js/app': './src/04/js/index.js',
-    './public/05/assets/js/app': './src/05/js/index.js',
-    './public/06/assets/js/app': './src/06/js/index.js'
+    './public/hello-world/assets/js/app': './src/hello-world/js/index.jsx',
+    './public/react-router/assets/js/app': './src/react-router/js/index.jsx',
+    './public/flux/assets/js/app': './src/flux/js/index.js',
+    './public/hooks/assets/js/app': './src/hooks/js/index.js',
+    './public/redux-thunk/assets/js/app': './src/redux-thunk/js/index.js',
+    './public/react-transition-group/assets/js/app': './src/react-transition-group/js/index.js'
   },
   output: {
     filename: '[name].js',
