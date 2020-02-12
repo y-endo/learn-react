@@ -12,7 +12,8 @@ module.exports = {
     './public/flux/assets/js/app': './src/flux/js/index.js',
     './public/hooks/assets/js/app': './src/hooks/js/index.js',
     './public/redux-thunk/assets/js/app': './src/redux-thunk/js/index.js',
-    './public/react-transition-group/assets/js/app': './src/react-transition-group/js/index.js'
+    './public/react-transition-group/assets/js/app': './src/react-transition-group/js/index.js',
+    './public/react-spring/assets/js/app': './src/react-spring/js/index.js'
   },
   output: {
     filename: '[name].js',
