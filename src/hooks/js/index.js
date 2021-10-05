@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
+import { useCounter } from './custom';
 
 function Example() {
-  const [count, setCount] = useState(0);
+  const { count, increment } = useCounter();
   const [name, setName] = useState('yuki');
 
   function changeName(newName) {
@@ -13,7 +14,25 @@ function Example() {
     <div>
       <p>You clicked {count} times</p>
       <p>私の名前 {name}</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
+      <button onClick={() => increment()}>Count Up</button>
+      <button onClick={() => changeName('endo')}>名前変更</button>
+    </div>
+  );
+}
+
+function Example2() {
+  const { count, increment } = useCounter();
+  const [name, setName] = useState('yuki');
+
+  function changeName(newName) {
+    setName(newName);
+  }
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <p>私の名前 {name}</p>
+      <button onClick={() => increment()}>Count Up</button>
       <button onClick={() => changeName('endo')}>名前変更</button>
     </div>
   );
@@ -38,6 +57,7 @@ function UseEffectExample() {
 ReactDOM.render(
   <React.Fragment>
     <Example />
+    <Example2 />
     <UseEffectExample />
   </React.Fragment>,
   document.querySelector('#app')
